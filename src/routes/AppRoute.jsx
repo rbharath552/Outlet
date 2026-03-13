@@ -11,8 +11,7 @@ function AppRoute() {
             <Route path="/" element={<Home/>}/>
      
          
-{/* 
-        <Route path="/dashboard" element={<Dashboard/>}/> */}
+
           <Route path="/Login" element={<Login/>} />
           <Route path="profile" element={<Profile />} />
 
