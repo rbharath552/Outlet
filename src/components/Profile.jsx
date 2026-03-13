@@ -1,8 +1,16 @@
-function Profile() {
+import React from 'react'
+
+const Profile = () => {
   return (
-    <div>
-      <h3>User Profile</h3>
+    <div className="flex p-10 justify-center items-center text-center text-xl">
+       <div className="h-100 w-150 bg-blue-200">
+<div className='flex justify-center items-center p-10'>
+
+</div>
+    Profile
+   </div>
     </div>
-  );
+  )
 }
-export default Profile;
+
+export default Profile

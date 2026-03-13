@@ -1,19 +1,19 @@
-import img2 from './assets/img2.png'
+
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
    <>
-   <div className='h-20  bg-cyan-800  flex justify-between items-center '>
+   <div className='h-20  bg-amber-300  flex justify-between items-center '>
     <div className='mx-10 h-20 w-30 flex justify-center items-center '>
        
-       <img src={img2} alt="" />
+       
    </div>
    
   <div className=' mx-10 flex justify-between items-center gap-10'>
-    <NavLink to="/login" className={({isActive})=>isActive?"bg-black text-white rounded":""}>login</NavLink>
-    <NavLink to="/" className={({isActive})=>isActive?"bg-black text-white rounded":""}>home</NavLink>
-    <NavLink to="/profile" className={({isActive})=>isActive?"bg-black text-white rounded":""}>profile</NavLink>
+    <Link to="/Login" className={({isActive})=>isActive?"bg-black text-white rounded":""}>login</Link>
+    <Link to="/" className={({isActive})=>isActive?"bg-black text-white rounded":""}>home</Link>
+    <Link to="/Profile" className={({isActive})=>isActive?"bg-black text-white rounded":""}>profile</Link>
   </div>
     </div>
 
