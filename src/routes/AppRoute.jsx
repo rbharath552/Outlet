@@ -2,18 +2,25 @@ import { Routes, Route, } from "react-router-dom";
 import Home from "../components/Home";
 import Login from "../components/Login";
 import Profile from "../components/Profile";
-import Dashboard from "../layout/Dashboard";
+
+import MainLayout from "../layout/Mainlayout";
 
 function AppRoute() {
   return (
     <Routes>
       
             <Route path="/" element={<Home/>}/>
-     
-         
 
-          <Route path="/Login" element={<Login/>} />
-          <Route path="profile" element={<Profile />} />
+            <Route element={<MainLayout/>}>
+              <Route path="/Login" element={<Login/>} />
+          <Route path="/profile" element={<Profile />} />
+
+            </Route>
+        
+
+       
+
+          
 
     
     </Routes>
